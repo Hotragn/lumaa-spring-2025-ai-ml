@@ -75,7 +75,6 @@ recommendations = get_recommendations(user_query, df)
 **Input:**
 ```txt
 "I love animation and action movies"
-"
 ```
 
 **Recommendations:**
