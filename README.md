@@ -8,7 +8,7 @@ A content-based movie recommendation system that suggests movies based on user t
 ![recording-demo](https://github.com/user-attachments/assets/1f07e6b6-434f-457a-99c7-8d1bbfea0f79)
 
 ## Salary Expectation
-$4,000 per month
+$4,480 per month
 
 ## Dataset
 - **Source**: [https://www.kaggle.com/datasets/moazeldsokyx/the-500-best-movies-imdb]
