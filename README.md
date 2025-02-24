@@ -4,22 +4,24 @@
 A content-based movie recommendation system that suggests movies based on user text descriptions using TF-IDF vectorization and cosine similarity.
 
 ## Demo
-[https://github.com/Hotragn/lumaa-spring-2025-ai-ml/blob/main/Demo.mp4]
+<video src="https://github.com/Hotragn/lumaa-spring-2025-ai-ml/blob/main/Demo.mp4" controls="controls" style="max-width: 730px;">
+</video>
+
 
 ## Salary Expectation
-[Your expected salary per month]
+$3000 per month
 
 ## Dataset
-- **Source**: [Dataset source name/link]
-- **Size**: [Number] movies
-- **Features**: Movie titles, plots, genres
+- **Source**: [https://www.kaggle.com/datasets/moazeldsokyx/the-500-best-movies-imdb]
+- **Size**: [503] movies
+- **Features**: Movie Name |	Rating |	Runtime |	Genre	Metascore |	Plot |	Directors |	Stars |	Votes |	Gross |	Link
 - **Format**: CSV file
 
 ## Setup Instructions
 
 ### Prerequisites
-- Python 3.8+
-- pip package manager
+- Python 
+- VScode/Jupyter Notebook/Colab
 
 ### Installation
 1. Clone the repository
@@ -64,71 +66,79 @@ python recommend.py "I love thrilling action movies set in space"
 
 ### Python Interface
 ```python
-from recommender import get_recommendations
+After running all the cells we can test it:
 
-query = "I love thrilling action movies set in space"
-recommendations = get_recommendations(query, n_recommendations=5)
+user_query = "I love animation and action movies"
+recommendations = get_recommendations(user_query, df)
 ```
 
 ## Example Output
 **Input:**
 ```txt
-"I love thrilling action movies set in space"
+"I love animation and action movies"
+"
 ```
 
 **Recommendations:**
 ```txt
-Guardians of the Galaxy
-Genre: Action, Sci-Fi, Comedy
-Similarity Score: 0.856
+User Query: I love animation and action movies
 
-Star Wars: A New Hope
-Genre: Sci-Fi, Action, Adventure
-Similarity Score: 0.789
+Recommended Movies:
 
-Interstellar
-Genre: Sci-Fi, Drama, Adventure
-Similarity Score: 0.745
+1. The Incredibles
+Genre: Animation, Action, Adventure
+Similarity Score: 0.30
+
+2. Mononoke-hime
+Genre: Animation, Action, Adventure
+Similarity Score: 0.30
+
+3. Beauty and the Beast
+Genre: Animation, Family, Fantasy
+Similarity Score: 0.21
+
+4. The Little Mermaid
+Genre: Animation, Adventure, Family
+Similarity Score: 0.21
+
+5. Being John Malkovich
+Genre: Comedy, Drama, Fantasy
+Similarity Score: 0.11
 ```
 
 ## Implementation Details
 
 ### Key Features
 - TF-IDF vectorization for text processing
+- Lemmatization to improve matching similarity
 - Cosine similarity for recommendation matching
 - Genre-based filtering
-- Preprocessed text analysis
+- Basic Preprocessed text analysis
 
 ### Functions
 - `preprocess_text()`: Cleans and normalizes text data
+- `create_tfidf_matrix()`:Creates a tfidf valued matrix for each sentence/word passed
+- `compute_similarity()`:Finalizes the similariy matrix using cosine similarity calculation
 - `get_recommendations()`: Generates movie recommendations
 - `extract_genre()`: Extracts genre preferences from query
 
 ## Project Structure
 ```
 movie-recommender/
-├── data/
-│   └── movies.csv
-├── src/
-│   ├── recommender.py
-│   └── utils.py
+└── Demo.mp4
+└── Top_Movies.csv
+├── Simple Content-Based Recommendation.ipynb
+│  
 ├── requirements.txt
 └── README.md
 ```
 
 ## Performance
 - **Response Time**: < 2 seconds
-- **Memory Usage**: < 500MB
-- **Dataset Size**: [Number] movies
+- **Memory Usage**: In Kbs
+- **Dataset Size**: [503] movies
 
 ## Author
-[Your Name]
-- GitHub: [@username]
-- LinkedIn: [Your LinkedIn]
-
-## License
-MIT License
-
-## Acknowledgments
-- Dataset provided by [Source]
-- Inspired by content-based recommendation systems
+[Hotragn Pettugani]
+- GitHub: [@hotragn]
+- LinkedIn: [https://www.linkedin.com/in/hotragn-pettugani/]
