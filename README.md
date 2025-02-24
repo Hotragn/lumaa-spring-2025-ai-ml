@@ -4,8 +4,7 @@
 A content-based movie recommendation system that suggests movies based on user text descriptions using TF-IDF vectorization and cosine similarity.
 
 ## Demo
-<video src="https://github.com/Hotragn/lumaa-spring-2025-ai-ml/blob/main/Demo.mp4" controls="controls" style="max-width: 730px;">
-</video>
+you can watch the demo video [here](https://github.com/Hotragn/lumaa-spring-2025-ai-ml/blob/main/Demo.mp4)
 
 
 ## Salary Expectation
